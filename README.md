@@ -5,7 +5,7 @@ simple-auth with Better-Auth library on Nuxt
 1. clone repo
 2. cd repo
 3. ``npm i``
-4. ``npx prisma generate``
+4. ``npx prisma db push``
 5. ``npm run dev``
 6. Profit!
 # What i used/made
