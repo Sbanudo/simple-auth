@@ -1,5 +1,5 @@
 # simple-auth
-simple-auth with Better-Auth library on Nuxt
+simple-auth with [Better-Auth](https://www.better-auth.com/) library on Nuxt
 
 # How to launch
 1. clone repo
