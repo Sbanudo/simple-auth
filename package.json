@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "better-auth": "^0.6.1",
+    "nuxt": "^3.13.2",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.21.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^5.21.1",
+    "studio": "^0.13.5",
+    "tailwindcss": "^3.4.14"
+  }
+}

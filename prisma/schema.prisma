@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid()) // Используйте String
+  email         String    @unique
+  password      String?   @unique
+  name          String
+  emailVerified Boolean
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @default(now()) @updatedAt
+  Session       Session[]
+  Account       Account[]
+
+  username   String?   @unique
+  role       String?
+  banned     Boolean?
+  banReason  String?
+  banExpires DateTime?
+
+  @@map("user")
+}
+
+model Session {
+  id             String   @id @default(cuid()) // Используйте String
+  expiresAt      DateTime
+  ipAddress      String?
+  userAgent      String?
+  userId         String // Измените на String, чтобы соответствовать User.id
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  impersonatedBy String? // Если это тоже ссылается на User.id, оставьте String
+
+  activeOrganizationId String?
+
+  @@map("session")
+}
+
+model Account {
+  id           String    @id @default(cuid()) // Используйте String
+  accountId    String
+  providerId   String
+  userId       String // Измените на String, чтобы соответствовать User.id
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken  String?
+  refreshToken String?
+  idToken      String?
+  expiresAt    DateTime?
+  password     String?
+
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id @default(cuid()) // Используйте String
+  identifier String
+  value      String
+  expiresAt  DateTime
+
+  @@map("verification")
+}
