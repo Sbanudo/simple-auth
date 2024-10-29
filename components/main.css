@@ -7,33 +7,3 @@
 body {
   background-color: #030303;
 }
-.AxolotlGradient {
-  background: linear-gradient(90deg, #f8a3ff, #a747b7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.shadow {
-  filter: drop-shadow(0px 0px 20px #22c55e)  drop-shadow(0px 0px 10px #22c55e);
-}
-.shadow1 {
-  filter: drop-shadow(0px 0px 20px #e5ff00)  drop-shadow(0px 0px 10px #e5ff00);
-}
-.shadow2 {
-  filter: drop-shadow(0px 0px 20px #ff0000)  drop-shadow(0px 0px 10px #ff0000);
-}
-.shadow3 {
-  filter: drop-shadow(0px 0px 20px #e5ff00) drop-shadow(0px 0px 20px #e5ff00)  drop-shadow(0px 0px 10px #e5ff00);
-}
-.shadow4 {
-  filter: drop-shadow(0px 0px 20px #0ea5e9) drop-shadow(0px 0px 20px #0ea5e9)  drop-shadow(0px 0px 10px #0ea5e9);
-}
-.shadow5 {
-  filter: drop-shadow(0px 0px 20px #FFFFFF) drop-shadow(0px 0px 20px #FFFFFF)  drop-shadow(0px 0px 10px #FFFFFF);
-}
-.shadow-rust {
-  filter: drop-shadow(0px 0px 20px #ff0000);
-}
-.shadow6 {
-  filter: drop-shadow(0px 0px 20px #FFFFFF) drop-shadow(0px 0px 20px #FFFFFF);
-}
