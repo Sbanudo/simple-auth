@@ -39,19 +39,19 @@ const { data: session } = await authClient.useSession(useFetch);
         <p>I used:</p>
         <div class="grid text-xl text-center justify-center">
     <div class="flex items-center">
-        <img src="/home/sbans/nuxt-projects/simple-auth/src/assets/icons/prisma.svg" class="w-8" />
+        <img src="./src/assets/icons/prisma.svg" class="w-8" />
         <p>Prisma</p>
     </div>
     <div class="flex items-center">
-        <img src="/home/sbans/nuxt-projects/simple-auth/src/assets/icons/nuxt.svg" class="w-8" />
+        <img src="./src/assets/icons/nuxt.svg" class="w-8" />
         <p>Nuxt</p>
     </div>
     <div class="flex items-center">
-        <img src="/home/sbans/nuxt-projects/simple-auth/src/assets/icons/typescript.svg" class="w-8" />
+        <img src="./src/assets/icons/typescript.svg" class="w-8" />
         <p>TypeScript</p>
     </div>
     <div class="flex items-center">
-        <img src="/home/sbans/nuxt-projects/simple-auth/src/assets/icons/tailwindcss.svg" class="w-8" />
+        <img src="./src/assets/icons/tailwindcss.svg" class="w-8" />
         <p>Tailwind</p>
     </div>
     </div>
