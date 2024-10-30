@@ -18,3 +18,4 @@ Also i want make this things soon™️:
 1. Reset password
 2. Profile picture upload
 3. Admin account
+4. Email Verification
