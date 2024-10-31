@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { errorMessages } from "vue/compiler-sfc";
-import { signUp } from "/home/sbans/nuxt-projects/portfolio-nuxt-auth-try/lib/auth-client.ts";
+import { signUp } from "~/lib/auth-client.ts";
 import { ref, computed } from 'vue';
 
 const firstName = ref("");
