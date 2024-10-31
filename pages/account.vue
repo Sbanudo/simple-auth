@@ -76,6 +76,16 @@ const { data: session, isPending, error } = await useSession(useFetch);
                 </Button>
             </RouterLink>
               </div>
+              <div
+                class="text-left text-zinc-300 flex gap-1 items-center border px-3 py-1 rounded-2xl border-zinc-700/40 bg-neutral-900/30 ease-in duration-200 cursor-pointer hover:bg-zinc-800"
+              >
+                <RouterLink to="/name">
+                <Button>
+                  <p>→ Change name</p>
+                </Button>
+            </RouterLink>
+              </div>
+              
               <NuxtLink to="/reset" >
               <div
                 class="text-left text-zinc-300 flex gap-1 items-center border  px-2 py-1 rounded-2xl border-zinc-700/40 bg-neutral-900/30 ease-in duration-200 cursor-pointer hover:bg-zinc-800"
