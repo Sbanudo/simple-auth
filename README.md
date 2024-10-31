@@ -19,6 +19,7 @@ Also i want make this things soon™️:
 2. Profile picture upload
 3. Admin account
 4. Email Verification
+
 Already done:
 1. SignUp
 2. SignIn
